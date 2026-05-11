@@ -1,0 +1,130 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Rom\\Documents\\UnturnedPlugin\\UnturnedOutbreak\\Outbreak_ClientLoader_TestPlugin\\Outbreak_ClientLoader_TestPlugin.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Rom\\Documents\\UnturnedPlugin\\UnturnedOutbreak\\Outbreak_ClientLoader_TestPlugin\\Outbreak_ClientLoader_TestPlugin.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Rom\\Documents\\UnturnedPlugin\\UnturnedOutbreak\\Outbreak_ClientLoader_TestPlugin\\Outbreak_ClientLoader_TestPlugin.csproj",
+        "projectName": "OutbreakClientHotTestPlugin",
+        "projectPath": "C:\\Users\\Rom\\Documents\\UnturnedPlugin\\UnturnedOutbreak\\Outbreak_ClientLoader_TestPlugin\\Outbreak_ClientLoader_TestPlugin.csproj",
+        "packagesPath": "C:\\Users\\Rom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rom\\Documents\\UnturnedPlugin\\UnturnedOutbreak\\Outbreak_ClientLoader_TestPlugin\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Rom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net46"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net46": {
+            "framework": "net46",
+            "targetAlias": "net46",
+            "projectReferences": {
+              "C:\\Users\\Rom\\Documents\\UnturnedPlugin\\UnturnedOutbreak\\UnityPluginLoader\\UnityPluginLoader.csproj": {
+                "projectPath": "C:\\Users\\Rom\\Documents\\UnturnedPlugin\\UnturnedOutbreak\\UnityPluginLoader\\UnityPluginLoader.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.300"
+      },
+      "frameworks": {
+        "net46": {
+          "framework": "net46",
+          "targetAlias": "net46",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300-preview.0.26177.108\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Rom\\Documents\\UnturnedPlugin\\UnturnedOutbreak\\UnityPluginLoader\\UnityPluginLoader.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Rom\\Documents\\UnturnedPlugin\\UnturnedOutbreak\\UnityPluginLoader\\UnityPluginLoader.csproj",
+        "projectName": "UnityPluginLoader",
+        "projectPath": "C:\\Users\\Rom\\Documents\\UnturnedPlugin\\UnturnedOutbreak\\UnityPluginLoader\\UnityPluginLoader.csproj",
+        "packagesPath": "C:\\Users\\Rom\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rom\\Documents\\UnturnedPlugin\\UnturnedOutbreak\\UnityPluginLoader\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Rom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net46"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net46": {
+            "framework": "net46",
+            "targetAlias": "net46",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.300"
+      },
+      "frameworks": {
+        "net46": {
+          "framework": "net46",
+          "targetAlias": "net46",
+          "dependencies": {
+            "BepInEx.Core": {
+              "target": "Package",
+              "version": "[5.4.21, )"
+            },
+            "HarmonyX": {
+              "target": "Package",
+              "version": "[2.10.1, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300-preview.0.26177.108\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

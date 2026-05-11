@@ -1,0 +1,8 @@
+is_global = true
+build_property.RootNamespace = Outbreak.ClientLoader.TestPlugin
+build_property.ProjectDir = C:\Users\Rom\Documents\UnturnedPlugin\UnturnedOutbreak\Outbreak_ClientLoader_TestPlugin\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 
+build_property.EnableCodeStyleSeverity = 

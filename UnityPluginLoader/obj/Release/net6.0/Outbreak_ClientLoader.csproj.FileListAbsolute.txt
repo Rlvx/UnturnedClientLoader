@@ -1,0 +1,12 @@
+C:\Users\Rom\Documents\UnturnedPlugin\UnturnedOutbreak\Outbreak_ClientLoader\obj\Release\net6.0\Outbreak_ClientLoader.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rom\Documents\UnturnedPlugin\UnturnedOutbreak\Outbreak_ClientLoader\obj\Release\net6.0\Outbreak_ClientLoader.AssemblyInfoInputs.cache
+C:\Users\Rom\Documents\UnturnedPlugin\UnturnedOutbreak\Outbreak_ClientLoader\obj\Release\net6.0\Outbreak_ClientLoader.AssemblyInfo.cs
+C:\Users\Rom\Documents\UnturnedPlugin\UnturnedOutbreak\Outbreak_ClientLoader\obj\Release\net6.0\Outbreak_ClientLoader.csproj.CoreCompileInputs.cache
+C:\Users\Rom\Documents\UnturnedPlugin\UnturnedOutbreak\Outbreak_ClientLoader\obj\Release\net6.0\Outbreak_ClientLoader.sourcelink.json
+C:\Users\Rom\Documents\UnturnedPlugin\UnturnedOutbreak\Outbreak_ClientLoader\bin\Release\net6.0\Outbreak_ClientLoader.deps.json
+C:\Users\Rom\Documents\UnturnedPlugin\UnturnedOutbreak\Outbreak_ClientLoader\bin\Release\net6.0\Outbreak_ClientLoader.dll
+C:\Users\Rom\Documents\UnturnedPlugin\UnturnedOutbreak\Outbreak_ClientLoader\bin\Release\net6.0\Outbreak_ClientLoader.pdb
+C:\Users\Rom\Documents\UnturnedPlugin\UnturnedOutbreak\Outbreak_ClientLoader\obj\Release\net6.0\Outbreak_ClientLoader.dll
+C:\Users\Rom\Documents\UnturnedPlugin\UnturnedOutbreak\Outbreak_ClientLoader\obj\Release\net6.0\refint\Outbreak_ClientLoader.dll
+C:\Users\Rom\Documents\UnturnedPlugin\UnturnedOutbreak\Outbreak_ClientLoader\obj\Release\net6.0\Outbreak_ClientLoader.pdb
+C:\Users\Rom\Documents\UnturnedPlugin\UnturnedOutbreak\Outbreak_ClientLoader\obj\Release\net6.0\ref\Outbreak_ClientLoader.dll
