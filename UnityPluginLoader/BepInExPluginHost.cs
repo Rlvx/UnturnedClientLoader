@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 
 namespace UnityPluginLoader
 {
-    [BepInPlugin("com.rlvx.outbreak.clientloader", "UnityPluginLoader", "1.0.0")]
+    [BepInPlugin("com.rlvx.unitypluginloader", "UnityPluginLoader", "1.0.0")]
     public class BepInExPluginHost : BaseUnityPlugin
     {
         
@@ -35,10 +35,10 @@ namespace UnityPluginLoader
                 throw;
             }
 
-            PublicLogger.LogInfo("OutbreakClientLoader ready.");
-            PublicLogger.LogInfo("Commands: /ocl load all | /ocl unload all | /ocl load <file>");
+            PublicLogger.LogInfo("UnityPluginLoader ready.");
+            PublicLogger.LogInfo("Commands: /ucl load all | /ucl unload all | /ucl load <file>");
             PublicLogger.LogInfo("Diagnostics file: " + CrashTrace.PathForDebug);
-            CrashTrace.Log("OutbreakClientLoaderPlugin", "Awake done, diagnostics path: " + CrashTrace.PathForDebug);
+            CrashTrace.Log("BepInExPluginHost", "Awake done, diagnostics path: " + CrashTrace.PathForDebug);
             
 
             // Attendre que la scène soit chargée avant de créer le handler
@@ -77,7 +77,7 @@ namespace UnityPluginLoader
             ClientEventProcessor processor = updateObject.AddComponent<ClientEventProcessor>();
 
             processor._loader = new ClientPluginLoader();
-            processor._pluginsDirectory = Path.Combine(Paths.PluginPath, "OutbreakClientPlugins");
+            processor._pluginsDirectory = Path.Combine(Paths.PluginPath, "MyPlugins");
             Directory.CreateDirectory(processor._pluginsDirectory);
 
             PublicLogger.LogInfo("Plugins folder: " + processor._pluginsDirectory);
@@ -110,13 +110,15 @@ namespace UnityPluginLoader
             {
                 CrashTrace.LogException("ClientEventProcessor.Update", ex);
                 Notify("Update tick failed: " + ex.Message);
+                // stop ticking to avoid repeated exceptions, but keep the plugin loaded for diagnostics
+                _loader = null;
             }
         }
 
         internal bool TryHandleChatCommand(string text)
         {
             CrashTrace.Log("ClientEventProcessor", "TryHandleChatCommand input: " + text);
-            if (string.IsNullOrWhiteSpace(text) || !text.StartsWith("/ocl", StringComparison.OrdinalIgnoreCase))
+            if (string.IsNullOrWhiteSpace(text) || !text.StartsWith("/ucl", StringComparison.OrdinalIgnoreCase))
             {
                 return false;
             }
@@ -124,14 +126,14 @@ namespace UnityPluginLoader
             string commandBody = text.Length > 4 ? text.Substring(4).Trim() : string.Empty;
             if (string.IsNullOrWhiteSpace(commandBody))
             {
-                Notify("Usage: /ocl load all | /ocl unload all | /ocl load <file>");
+                Notify("Usage: /ucl load all | /ucl unload all | /ucl load <file>");
                 return true;
             }
 
             List<string> args = ParseArguments(commandBody);
             if (args.Count == 0)
             {
-                Notify("Usage: /ocl load all | /ocl unload all | /ocl load <file>");
+                Notify("Usage: /ucl load all | /ucl unload all | /ucl load <file>");
                 return true;
             }
 
@@ -148,7 +150,7 @@ namespace UnityPluginLoader
                         return true;
                     default:
                         Notify("Unknown action: " + action);
-                        Notify("Usage: /ocl load all | /ocl unload all | /ocl load <file>");
+                        Notify("Usage: /ucl load all | /ucl unload all | /ucl load <file>");
                         return true;
                 }
             }
@@ -165,7 +167,7 @@ namespace UnityPluginLoader
             CrashTrace.Log("ClientEventProcessor", "HandleLoad args: " + string.Join(" | ", args));
             if (args.Count < 2)
             {
-                Notify("Usage: /ocl load all | /ocl load <file>");
+                Notify("Usage: /ucl load all | /ucl load <file>");
                 return;
             }
 
@@ -193,7 +195,7 @@ namespace UnityPluginLoader
                 return;
             }
 
-            Notify("Usage: /ocl unload all");
+            Notify("Usage: /ucl unload all");
         }
 
         private string ResolvePluginPath(string rawPath)

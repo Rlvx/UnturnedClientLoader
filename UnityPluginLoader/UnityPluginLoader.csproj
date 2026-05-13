@@ -30,4 +30,9 @@
     </Reference>
   </ItemGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <!-- Copie automatique dans le dossier plugins après compilation -->
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="E:\SteamLibrary\steamapps\common\Unturned\BepInEx\plugins" />
+  </Target>
+
 </Project>

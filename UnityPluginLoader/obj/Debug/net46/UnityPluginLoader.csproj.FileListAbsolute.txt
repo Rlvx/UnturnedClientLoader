@@ -39,3 +39,4 @@ C:\Users\Rom\Documents\UnturnedPlugin\ClientPluginLoader\UnityPluginLoader\obj\D
 C:\Users\Rom\Documents\UnturnedPlugin\ClientPluginLoader\UnityPluginLoader\obj\Debug\net46\UnityPlu.5664B911.Up2Date
 C:\Users\Rom\Documents\UnturnedPlugin\ClientPluginLoader\UnityPluginLoader\obj\Debug\net46\UnityPluginLoader.dll
 C:\Users\Rom\Documents\UnturnedPlugin\ClientPluginLoader\UnityPluginLoader\obj\Debug\net46\UnityPluginLoader.pdb
+C:\Users\Rom\Documents\UnturnedPlugin\ClientPluginLoader\UnityPluginLoader\obj\Debug\net46\UnityPluginLoader.sourcelink.json

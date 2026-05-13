@@ -41,7 +41,7 @@ public sealed class ClientPluginLoader
         }
 
         string pluginId = Guid.NewGuid().ToString("N", CultureInfo.InvariantCulture);
-        string cacheDirectory = Path.Combine(Path.GetTempPath(), "OutbreakClientLoader", pluginId);
+        string cacheDirectory = Path.Combine(Path.GetTempPath(), "PluginCache", pluginId);
         string copiedAssemblyPath = CopyPluginForShadowLoading(fullPath, cacheDirectory);
         CrashTrace.Log("ClientPluginLoader", "Plugin copied to cache: " + copiedAssemblyPath);
 
@@ -161,7 +161,6 @@ public sealed class ClientPluginLoader
 
     public void TickAll(Action<string> logger = null)
     {
-        CrashTrace.Log("ClientPluginLoader", "TickAll start, plugin count=" + _plugins.Count);
         LoadedPlugin[] loadedPlugins;
         lock (_sync)
         {
@@ -175,7 +174,6 @@ public sealed class ClientPluginLoader
 
         foreach (LoadedPlugin loaded in loadedPlugins)
         {
-            CrashTrace.Log("ClientPluginLoader", "Ticking plugin " + loaded.DisplayName);
             loaded.Tick(logger);
         }
     }

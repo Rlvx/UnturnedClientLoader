@@ -26,13 +26,13 @@ internal static class CrashTrace
     {
         try
         {
-            string root = System.IO.Path.Combine(System.IO.Path.GetTempPath(), "OutbreakClientLoader");
+            string root = System.IO.Path.Combine(System.IO.Path.GetTempPath(), "UnityPluginLoader");
             Directory.CreateDirectory(root);
             return System.IO.Path.Combine(root, "diagnostics.log");
         }
         catch
         {
-            return System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "OutbreakClientLoader.Diagnostics.log");
+            return System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "UnityPluginLoader.Diagnostics.log");
         }
     }
 

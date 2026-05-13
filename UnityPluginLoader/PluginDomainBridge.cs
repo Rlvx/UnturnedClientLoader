@@ -80,7 +80,6 @@ public sealed class PluginDomainBridge : MarshalByRefObject
     {
         if (_tickable == null)
         {
-            CrashTrace.Log("PluginDomainBridge", "Tick called but _tickable is null");
             return;
         }
 
@@ -91,6 +90,7 @@ public sealed class PluginDomainBridge : MarshalByRefObject
         catch (Exception ex)
         {
             CrashTrace.LogException("PluginDomainBridge.Tick", ex);
+            _tickable = null; // stop ticking to avoid repeated exceptions, but keep the plugin loaded for diagnostics
         }
     }
 

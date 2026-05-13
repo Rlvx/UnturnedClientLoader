@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClientLoaderTestPlugin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf3ff410e013343d86713095474fb646a4b9b37c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClientLoaderTestPlugin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClientLoaderTestPlugin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
